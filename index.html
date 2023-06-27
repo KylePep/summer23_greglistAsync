@@ -33,6 +33,7 @@
           <!-- NAVLINKS -->
           <a href="#/about" class="nav-link">About</a>
           <a href="#/cars" class="nav-link">Cars</a>
+          <a href="#/houses" class="nav-link">Houses</a>
         </div>
       </div>
       <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
@@ -41,8 +42,82 @@
 
   <!-- SECTION -->
   <main>
-
     <section id="router-view">
+      <div class="container-fluid">
+
+        <!-- SECTION Form Button -->
+        <section class="row d-flex justify-content-start my-3">
+          <div class=" col-2 ms-2 fs-1">
+            Houses
+          </div>
+          <button id="houseFormButton" class=" col-2 btn btn-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#houseCollapse" aria-expanded="false" aria-controls="collapseExample">
+            House Form
+          </button>
+        </section>
+        <!-- SECTION Form -->
+        <section class="row">
+          <div id="house-form" class="col-10 m-auto">
+          </div>
+        </section>
+        <!-- <section class="row">
+          <div class="col-10 m-auto">
+            <div class="collapse" id="houseCollapse">
+              <div class="card card-body" id="house-form">
+                <form onsubmit="app.HousesController.createHouse(event)">
+
+                  <div>
+                    <label for="houseImg">Image URL</label>
+                    <input type="url" id="houseImg" maxlength="300" required name="imgUrl">
+                  </div>
+
+                  <div>
+                    <label for="housePrice">Price</label>
+                    <input type="number" id="housePrice" minlength="0" maxlength="999999999" required name="price">
+                  </div>
+                  <div>
+                    <label for="houseYear">Year</label>
+                    <input type="number" id="houseYear" minlength="0" maxlength="999999999" required name="year">
+                  </div>
+                  <div class="d-flex ">
+                    <div>
+                      <label for="houseBedrooms">Bedrooms</label>
+                      <input type="number" id="houseBedrooms" minlength="1" maxlength="100" required name="bedrooms">
+                    </div>
+
+                    <div>
+                      <label for="houseBathrooms" class="ms-5">Bathrooms</label>
+                      <input id="houseBathrooms" class="ms-5" type="number" min="1" max="100" required name="bathrooms">
+                    </div>
+
+
+                    <div>
+                      <label for="houseLevels" class="ms-5">Levels</label>
+                      <input type="number" class="ms-5" id="houseLevels" name="levels" min="1" max="100">
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="houseDescription">Description</label>
+                    <textarea id="houseDescription" name="description" rows="10" class="w-50">
+                </textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+
+
+        <!-- SECTION House list -->
+        <section id="houseList" class="row">
+        </section>
+      </div>
+
       <!-- primary viewport -->
       <!-- <div class="container-fluid">
         <div class="row">

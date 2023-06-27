@@ -1,7 +1,7 @@
 import { AppState } from "../AppState.js"
 
 export class Car {
-  constructor (data) {
+  constructor(data) {
     this.id = data.id
     this.make = data.make
     this.model = data.model

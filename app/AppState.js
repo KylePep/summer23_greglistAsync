@@ -18,6 +18,8 @@ class ObservableAppState extends EventEmitter {
   // SECTION safe zone
   /** @type {import('./models/Car.js').Car[]} */
   cars = []
+  /** @type {import('./models/House.js').House[]} */
+  houses = []
 
 
   // Used to load initial data
